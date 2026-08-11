@@ -23,11 +23,9 @@
   <header class="container-fluid max-width-lg mb-4">
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3 py-2" aria-label="Main Navigation">
       <div class="container-fluid">
-
         <a class="navbar-brand fw-bold fs-4 pe-3 border-end border-secondary d-flex align-items-center gap-2" href="index.html">
-            <i class="fa-solid fa-leaf text-success"></i> The Green Door
+          <i class="fa-solid fa-leaf text-success"></i> The Green Door
         </a>
-        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,30 +56,30 @@
         <h1 id="menu-title" class="h3 fw-bold border-bottom border-secondary pb-2">Our Menu</h1>
         <nav aria-label="Menu categories">
           <ul class="list-inline mb-0 small text-light fw-semibold">
-            <li class="list-inline-item"><a href="#" class="text-light text-decoration-none border-bottom border-light">All</a></li>
+            <li class="list-inline-item"><a href="#" class="category-filter text-light text-decoration-none border-bottom border-light" data-category="all">All</a></li>
             <li class="list-inline-item text-secondary">|</li>
-            <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Starters</a></li>
+            <li class="list-inline-item"><a href="#" class="category-filter text-secondary text-decoration-none" data-category="starters">Starters</a></li>
             <li class="list-inline-item text-secondary">|</li>
-            <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Bowls &amp; Mains</a></li>
+            <li class="list-inline-item"><a href="#" class="category-filter text-secondary text-decoration-none" data-category="mains">Bowls &amp; Mains</a></li>
             <li class="list-inline-item text-secondary">|</li>
-            <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Smoothies &amp; Drinks</a></li>
+            <li class="list-inline-item"><a href="#" class="category-filter text-secondary text-decoration-none" data-category="drinks">Smoothies &amp; Drinks</a></li>
           </ul>
         </nav>
       </section>
 
-      <!-- Section 2: Menu Items Grid (Row 1) -->
-      <section class="mb-4" aria-label="Starters and Main Dishes">
+      <!-- Section 2: Menu Items Grid -->
+      <section aria-label="Menu Items Grid">
         <div class="row g-4">
           
-          <!-- Item 1 -->
-          <div class="col-12 col-md-6 col-lg-4">
+          <!-- Item 1: Starters -->
+          <div class="col-12 col-md-6 col-lg-4 menu-item" data-category="starters">
             <div class="custom-card p-2 text-center h-100">
               <img 
                 src="https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=400&q=80" 
                 srcset="https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=250&q=80 250w,
                         https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=400&q=80 400w"
                 sizes="(max-width: 768px) 100vw, 33vw"
-                alt="Avocado Toast Trays topped with seasonings and cheese" 
+                alt="Avocado Toast Trays" 
                 class="img-fluid rounded mb-2 w-100 object-fit-cover" 
                 style="height: 180px;"
               >
@@ -89,15 +87,15 @@
             </div>
           </div>
 
-          <!-- Item 2 (Active Focus State as shown in Figma) -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="custom-card p-2 text-center h-100 border-primary" style="border-width: 2px !important;">
+          <!-- Item 2: Starters -->
+          <div class="col-12 col-md-6 col-lg-4 menu-item" data-category="starters">
+            <div class="custom-card p-2 text-center h-100">
               <img 
                 src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=400&q=80" 
                 srcset="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=250&q=80 250w,
                         https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=400&q=80 400w"
                 sizes="(max-width: 768px) 100vw, 33vw"
-                alt="Garlic Nachos loaded with melted cheese and toppings" 
+                alt="Garlic Nachos" 
                 class="img-fluid rounded mb-2 w-100 object-fit-cover" 
                 style="height: 180px;"
               >
@@ -105,15 +103,15 @@
             </div>
           </div>
 
-          <!-- Item 3 -->
-          <div class="col-12 col-md-6 col-lg-4">
+          <!-- Item 3: Mains -->
+          <div class="col-12 col-md-6 col-lg-4 menu-item" data-category="mains">
             <div class="custom-card p-2 text-center h-100">
               <img 
                 src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=400&q=80" 
                 srcset="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=250&q=80 250w,
                         https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=400&q=80 400w"
                 sizes="(max-width: 768px) 100vw, 33vw"
-                alt="Spicy Tofu Tacos with avocado and lime" 
+                alt="Spicy Tofu Tacos" 
                 class="img-fluid rounded mb-2 w-100 object-fit-cover" 
                 style="height: 180px;"
               >
@@ -121,22 +119,15 @@
             </div>
           </div>
 
-        </div>
-      </section>
-
-      <!-- Section 3: Menu Items Grid (Row 2) -->
-      <section aria-label="Bowls, Smoothies, and Desserts">
-        <div class="row g-4">
-          
-          <!-- Item 4 -->
-          <div class="col-12 col-md-6 col-lg-4">
+          <!-- Item 4: Mains -->
+          <div class="col-12 col-md-6 col-lg-4 menu-item" data-category="mains">
             <div class="custom-card p-2 text-center h-100">
               <img 
                 src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80" 
                 srcset="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=250&q=80 250w,
                         https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80 400w"
                 sizes="(max-width: 768px) 100vw, 33vw"
-                alt="Peanut Noodle Bowl garnished with lime and fresh herbs" 
+                alt="Peanut Noodle Bowl" 
                 class="img-fluid rounded mb-2 w-100 object-fit-cover" 
                 style="height: 180px;"
               >
@@ -144,15 +135,15 @@
             </div>
           </div>
 
-          <!-- Item 5 -->
-          <div class="col-12 col-md-6 col-lg-4">
+          <!-- Item 5: Drinks -->
+          <div class="col-12 col-md-6 col-lg-4 menu-item" data-category="drinks">
             <div class="custom-card p-2 text-center h-100">
               <img 
                 src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=400&q=80" 
                 srcset="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=250&q=80 250w,
                         https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=400&q=80 400w"
                 sizes="(max-width: 768px) 100vw, 33vw"
-                alt="Mango Berry Smoothie topped with fresh blueberries and blackberries" 
+                alt="Mango Berry Smoothie" 
                 class="img-fluid rounded mb-2 w-100 object-fit-cover" 
                 style="height: 180px;"
               >
@@ -160,19 +151,19 @@
             </div>
           </div>
 
-          <!-- Item 6 -->
-          <div class="col-12 col-md-6 col-lg-4">
+          <!-- Item 6: Drinks -->
+          <div class="col-12 col-md-6 col-lg-4 menu-item" data-category="drinks">
             <div class="custom-card p-2 text-center h-100">
               <img 
-                src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80" 
-                srcset="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=250&q=80 250w,
-                        https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80 400w"
+                src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=400&q=80" 
+                srcset="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=250&q=80 250w,
+                        https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=400&q=80 400w"
                 sizes="(max-width: 768px) 100vw, 33vw"
-                alt="Fudge Brownie slice" 
+                alt="Organic Herbal Tea" 
                 class="img-fluid rounded mb-2 w-100 object-fit-cover" 
                 style="height: 180px;"
               >
-              <h2 class="h6 fw-bold mb-0">Fudge Brownie</h2>
+              <h2 class="h6 fw-bold mb-0">Organic Herbal Tea</h2>
             </div>
           </div>
 
@@ -199,5 +190,35 @@
 
   <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Category Filtering Script -->
+  <script>
+    document.querySelectorAll('.category-filter').forEach(filter => {
+      filter.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Remove active styling from all category links
+        document.querySelectorAll('.category-filter').forEach(f => {
+          f.classList.remove('text-light', 'border-bottom', 'border-light');
+          f.classList.add('text-secondary');
+        });
+        
+        // Apply active styling to clicked link
+        filter.classList.remove('text-secondary');
+        filter.classList.add('text-light', 'border-bottom', 'border-light');
+
+        // Filter cards
+        const selectedCategory = filter.getAttribute('data-category');
+        
+        document.querySelectorAll('.menu-item').forEach(item => {
+          if (selectedCategory === 'all' || item.getAttribute('data-category') === selectedCategory) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

@@ -12,7 +12,7 @@
   --accent-green: #2e5a27;
   --accent-green-hover: #3d7534;
   --border-color: #333333;
-  --border-active: #2b7fff;
+  --border-active: #2e5a27;
 
   /* Bootstrap Variable Overrides */
   --bs-body-bg: var(--bg-dark);
@@ -65,11 +65,12 @@ main {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .custom-card:hover {
-  border-color: var(--border-active);
+  border-color: var(--accent-green) !important;
+  box-shadow: 0 0 10px rgba(46, 90, 39, 0.5);
 }
 
 /* Primary Green Action Button */
