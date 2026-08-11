@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Green Door Restaurant - About & Contact</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="p-3 p-md-4">
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="visually-hidden-focusable p-2">Skip to main content</a>
+
+  <!-- Header / Navigation Bar -->
+  <header class="container-fluid max-width-lg mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3 py-2" aria-label="Main Navigation">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand fw-bold fs-4 pe-3 border-end border-secondary d-flex align-items-center gap-2" href="index.html">
+            <i class="fa-solid fa-leaf text-success"></i> The Green Door
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 justify-content-around text-center">
+            <li class="nav-item flex-fill border-end border-secondary">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item flex-fill border-end border-secondary">
+              <a class="nav-link" href="menu.html">MENU</a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link active" aria-current="page" href="about.html">ABOUT/CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="container-fluid max-width-lg">
+    
+    <div class="custom-card p-4">
+      <div class="row g-4">
+        
+        <!-- Section 1 & 2: Story & Profile (Left Column) -->
+        <section class="col-12 col-lg-6 d-flex flex-column" aria-labelledby="story-heading">
+          <!-- Profile / Avatar Image -->
+          <div class="mb-3 text-center text-lg-start">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+              srcset="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80 300w,
+                      https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80 600w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Portrait of restaurant founder" 
+              class="img-fluid rounded border border-secondary w-100 object-fit-cover" 
+              style="max-height: 260px;"
+            >
+          </div>
+
+          <!-- Our Story Text Area -->
+          <div class="mt-2">
+            <h2 id="story-heading" class="h5 fw-bold mb-3">Our Story:</h2>
+            <p class="text-light fs-6 lh-lg mb-0 border-top border-bottom border-secondary py-2">
+              The Green Door Restaurant was created to bring vibrant, organic, and plant-based meals to our community. We source 100% locally grown ingredients to make wholesome food that is good for you and the planet.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 3: Reservation Form (Right Column) -->
+        <section class="col-12 col-lg-6" aria-labelledby="reservation-heading">
+          <h2 id="reservation-heading" class="h5 fw-bold text-uppercase mb-3">Reserve a Table:</h2>
+          
+          <form action="#" method="post" class="d-flex flex-column gap-3">
+            <div>
+              <label for="userName" class="form-label fw-semibold">Name:</label>
+              <input type="text" id="userName" name="name" class="form-control bg-dark text-light border-secondary" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+              <label for="userEmail" class="form-label fw-semibold">Email:</label>
+              <input type="email" id="userEmail" name="email" class="form-control bg-dark text-light border-secondary" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+              <label for="userMessage" class="form-label fw-semibold">Message:</label>
+              <textarea id="userMessage" name="message" rows="4" class="form-control bg-dark text-light border-secondary" placeholder="Include date, time, and party size..." required></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="btn btn-green w-100 w-md-auto">Book Table</button>
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="container-fluid max-width-lg mt-auto pt-4">
+    <div class="footer-custom p-3 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+      <p class="mb-0 fs-6">&copy; 2026 Alessandro Mbeng. All Rights Reserved.</p>
+      <div class="d-flex gap-2 align-items-center fs-6">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="text-secondary">|</span>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <span class="text-secondary">|</span>
+        <a href="mailto:contact@greendoor.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

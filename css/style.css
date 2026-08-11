@@ -1,0 +1,111 @@
+/* ==========================================================================
+   CSS Custom Properties (Theme Variables) & Bootstrap Overrides
+   ========================================================================== */
+:root {
+  /* Brand Color Tokens from Figma */
+  --bg-dark: #121212;
+  --card-bg: #1e1e24;
+  --nav-bg: #121212;
+  --footer-bg: #18181c;
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+  --accent-green: #2e5a27;
+  --accent-green-hover: #3d7534;
+  --border-color: #333333;
+  --border-active: #2b7fff;
+
+  /* Bootstrap Variable Overrides */
+  --bs-body-bg: var(--bg-dark);
+  --bs-body-color: var(--text-main);
+  --bs-border-color: var(--border-color);
+}
+
+/* Global Reset & Base Typography */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navigation Bar Styling */
+.navbar-custom {
+  background-color: var(--nav-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.nav-link {
+  color: var(--text-main) !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-green) !important;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--text-main);
+}
+
+/* Common Card & Container Block Styling */
+.custom-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.custom-card:hover {
+  border-color: var(--border-active);
+}
+
+/* Primary Green Action Button */
+.btn-green {
+  background-color: var(--accent-green);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+  background-color: var(--accent-green-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Footer Styling */
+.footer-custom {
+  background-color: var(--footer-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-muted);
+}
+
+.footer-custom a {
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-custom a:hover,
+.footer-custom a:focus {
+  color: var(--accent-green);
+}
